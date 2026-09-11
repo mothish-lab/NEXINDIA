@@ -1,0 +1,16 @@
+{
+  "name": "civic-issue-platform",
+  "version": "1.0.0",
+  "description": "Crowdsourced Civic Issue Reporting and Resolution System",
+  "private": true,
+  "scripts": {
+    "dev": "concurrently \"npm run server\" \"npm run client\"",
+    "client": "npm --prefix client run dev",
+    "server": "npm --prefix server run dev",
+    "seed": "node scripts/seed.js",
+    "install:all": "npm install && npm --prefix client install && npm --prefix server install"
+  },
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  }
+}
